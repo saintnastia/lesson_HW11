@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(".lang-en").click(function () {
         $(".lang-en").toggleClass("active");
-    })
+    });
     $(function() {
         $('.tabs nav a').on('click', function() {
             show_content($(this).index());
@@ -19,4 +19,13 @@ $(document).ready(function () {
             $('.tabs nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
         }
     });
+    $('.single-item').slick({
+        dots: true
+    });
+    $('.grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: 412,
+        gutter: 40,
+    });
+
 });
