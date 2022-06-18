@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    $(".lang-en").click(function () {
-        $(".lang-en").toggleClass("active");
+    $(".btn_burger").click(function () {
+        $(".navigation").toggleClass("active");
     });
     $(function() {
         $('.tabs nav a').on('click', function() {
